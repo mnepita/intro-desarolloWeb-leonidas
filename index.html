@@ -11,43 +11,24 @@
 
   <div class="wrapper">
     <div class="player">
-      <button class="button" id="backward" aria-label='backward 10 segs' title='backward 10 segs'></button>
-      <button class="button" id="play" aria-label='play' title='play'></button>
-      <button class="button" id="pause" aria-label='pause' title='pause' hidden></button>
-      <button class="button" id="forward" aria-label='forward 10 segs'title='forward 10 segs' ></button>
+      <video id="video" muted poster="https://images.unsplash.com/photo-1552308995-2baac1ad5490?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080&q=80" src="./videos/lofi.mp4"></video>
 
-      <video id="video" controls muted poster="./images/poster.jpg" src="./videos/lofi.mp4"></video>
+      <h2 class="player-title"> Art music for Programming</h2>
+
+      <div class="player-actions">
+        <button class="button" id="backward" aria-label='backward 10 segs' title='backward 10 segs'></button>
+        <button class="button" id="play" aria-label='play' title='play'></button>
+        <button class="button" id="pause" aria-label='pause' title='pause' hidden></button>
+        <button class="button" id="forward" aria-label='forward 10 segs'title='forward 10 segs' ></button>
+      </div>
+
+      <div class="player-progress">
+        <input type="range">
+      </div>
+
     </div>
-
   </div>
 
-
-
-  <script>
-    const $video = document.querySelector('#video');
-    const $play = document.querySelector('#play');
-    const $pause = document.querySelector('#pause');
-    const $backward = document.querySelector('#backward');
-    const $forward = document.querySelector('#forward');
-
-    $play.addEventListener('click', handlePlay);
-    $pause.addEventListener('click', handlePause);
-
-    function handlePlay() {
-      $video.play();
-      $play.hidden = true;
-      $pause.hidden = false;
-      console.log('click en play');
-    }
-
-    function handlePause() {
-      $video.pause();
-      $pause.hidden = true;
-      $play.hidden = false;
-
-      console.log('click en pausa');
-    }
-
-  </script>
+  <script src="./js/index.js"></script>
 </body>
 </html>
