@@ -5,6 +5,11 @@
   background-color:transparent;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
+}
+
+.button:active {
+  transform: scale(.9);
 }
 
 #play {
@@ -13,15 +18,12 @@
 
 #pause {
    background-image: url(../images/pause.svg);
-
 }
 
 #backward {
   background-image: url(../images/-10.svg);
-
 }
 
 #forward {
   background-image: url(../images/+10.svg);
-
 }
