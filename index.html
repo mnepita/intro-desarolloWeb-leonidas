@@ -8,13 +8,19 @@
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <h1>Video Player</h1>
-  <button class="button" id="play"></button>
-  <button class="button" id="pause" hidden></button>
-  <button class="button" id="backward"></button>
-  <button class="button" id="forward"></button>
 
-  <video id="video" controls muted poster="./images/poster.jpg" src="./videos/lofi.mp4"></video>
+  <div class="wrapper">
+    <div class="player">
+      <button class="button" id="backward" aria-label='backward 10 segs' title='backward 10 segs'></button>
+      <button class="button" id="play" aria-label='play' title='play'></button>
+      <button class="button" id="pause" aria-label='pause' title='pause' hidden></button>
+      <button class="button" id="forward" aria-label='forward 10 segs'title='forward 10 segs' ></button>
+
+      <video id="video" controls muted poster="./images/poster.jpg" src="./videos/lofi.mp4"></video>
+    </div>
+
+  </div>
+
 
 
   <script>
