@@ -11,9 +11,10 @@
 
   <div class="wrapper">
     <div class="player">
+
       <video id="video" muted poster="https://images.unsplash.com/photo-1552308995-2baac1ad5490?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080&q=80" src="./videos/lofi.mp4"></video>
 
-      <h2 class="player-title"> Art music for Programming</h2>
+      <h2 class="player-title"> Programming music</h2>
 
       <div class="player-actions">
         <button class="button" id="backward" aria-label='backward 10 segs' title='backward 10 segs'></button>
@@ -23,7 +24,7 @@
       </div>
 
       <div class="player-progress">
-        <input type="range">
+        <input id="progress" type="range" min="0" value="0" step="1">
       </div>
 
     </div>
